@@ -1,5 +1,6 @@
 import { Header } from './components/Header/Header'
 import { Clients } from './components/Clients/Clients'
+import { Client } from './components/Client/Client';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Routes, Route, useLocation} from 'react-router-dom'
 
@@ -45,6 +46,15 @@ const location = useLocation()
           </motion.div>
         }>
       </Route>
+      <Route path='/client/:id' element={
+       <motion.div 
+       className='page' 
+       initial="out" 
+       animate="in" 
+       exit="out" 
+       variants={pageTransistion}>
+        <Client/>
+        </motion.div>}></Route>
       </Routes>
       
     </AnimatePresence>

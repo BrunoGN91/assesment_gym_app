@@ -24,7 +24,7 @@ import {
     StyledOptionBar,
     StyledOptionSection,
     StyledMediaMenu
-    } from './StyledComponentsHeader'
+    } from './StyledHeader'
 
 
 

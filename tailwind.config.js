@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
@@ -15,14 +16,10 @@ module.exports = {
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
     },
-    extend: {
       fontFamily: {
         sans: 
           'Roboto',
       },
-    },
-
-    
   },
   
   plugins: [],
