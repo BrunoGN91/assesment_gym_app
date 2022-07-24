@@ -67,7 +67,7 @@ export const ClientDataSection = styled("div")(({theme}) => ({
 export const DataSection = styled("div")(({theme}) => ({
     position: "relative",
     display: "flex",
-    flexDirection: "row",
+    flexDirection: "column",
     height: '100%',
     maxWidth: '100%',
     margin: "40px 30px",

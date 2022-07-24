@@ -1,6 +1,15 @@
 import {useEffect, useState} from "react"
 
+import { DATA_CLIENTS } from "../Data/data";
+
+
 import { Header } from './../Header/Header'
+import { useParams, useNavigate } from 'react-router-dom'
+import { SelectedActivity } from "./SelectedInfo/SelectedActivity";
+import { SelectedMedic } from './SelectedInfo/SelectedMedic'
+import { SelectedPayment } from "./SelectedInfo/SelectedPayment";
+
+import { Spinner } from "../Spinner/Spinner";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -18,11 +27,34 @@ import {
 export const Client = () => {
 
     const [selectedData, setSelectedData] = useState("")
+    const [user, setUser] = useState({})
+    const [loading, setLoading] = useState(false)
+
+
+    const {id} = useParams()
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        setUser(DATA_CLIENTS[id])
+    },[])
+
+    const handleSelectedInfo = (e) => {
+        setLoading(true)
+        setSelectedData(e)
+        setTimeout(() => {
+            setLoading(false)
+        }, 1400)
+       
+    }
+
+    const handleBack = () => {
+        navigate('/clients', {replace: true})
+    }
 
     return(
         <>
         <Header />
-        <BackClients>
+        <BackClients onClick={handleBack}>
             <ArrowBackIcon />
             <h2>clients</h2>
         </BackClients>
@@ -61,10 +93,11 @@ export const Client = () => {
             </ClientDataSection>
         </div>
         <DataSection>
+            <div className="flex flex-row w-full justify-start items-start">
             <button
             value={"activity"}
-            onClick={(e) => setSelectedData(e.currentTarget.value)}
-            className={`flex flex-row items-center justify-center w-full h-10 ${selectedData === "activity" ? 'bg-stone-400' : 'bg-stone-300'}`}>
+            onClick={(e) => handleSelectedInfo(e.currentTarget.value)}
+            className={`flex flex-row items-center transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "activity" ? 'bg-stone-400' : 'bg-stone-300'}`}>
                 <StyledH3
                 name="activity"
                 value="activity"
@@ -72,28 +105,51 @@ export const Client = () => {
             </button>
             <button
             value={"medic"}
-            onClick={(e) => setSelectedData(e.currentTarget.value)}
-            className={`flex flex-row items-center justify-center w-full h-10 ${selectedData === "medic" ? 'bg-stone-400' : 'bg-stone-300'}`}>
+            onClick={(e) => handleSelectedInfo(e.currentTarget.value)}
+            className={`flex flex-row items-center transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "medic" ? 'bg-stone-400' : 'bg-stone-300'}`}>
                 <StyledH3>Apto medico</StyledH3>
             </button>
             <button 
             value={"payment"}
-            onClick={(e) => setSelectedData(e.currentTarget.value)}
-            className={`flex flex-row items-center justify-center w-full h-10 ${selectedData === "payment" ? 'bg-stone-400' : 'bg-stone-300'}`}>
+            onClick={(e) => handleSelectedInfo(e.currentTarget.value)}
+            className={`flex flex-row items-center transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "payment" ? 'bg-stone-400' : 'bg-stone-300'}`}>
                 <StyledH3>Pagos</StyledH3>
             </button>
             <button 
             value={"timeline"}
-            onClick={(e) => setSelectedData(e.currentTarget.value)}
-            className={`flex flex-row items-center justify-center w-full h-10 ${selectedData === "timeline" ? 'bg-stone-400' : 'bg-stone-300'}`}>
+            onClick={(e) => handleSelectedInfo(e.currentTarget.value)}
+            className={`flex flex-row items-center transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "timeline" ? 'bg-stone-400' : 'bg-stone-300'}`}>
                 <StyledH3>Linea temporal</StyledH3>
             </button>
             <button
             value={"tools"}
-            onClick={(e) => setSelectedData(e.currentTarget.value)} 
-            className={`flex flex-row items-center justify-center w-full h-10 ${selectedData === "tools" ? 'bg-stone-400' : 'bg-stone-300'}`}>
+            onClick={(e) => handleSelectedInfo(e.currentTarget.value)} 
+            className={`flex flex-row items-center transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "tools" ? 'bg-stone-400' : 'bg-stone-300'}`}>
                 <StyledH3>Herramientas</StyledH3>
             </button>
+            </div>
+                {loading ? ( <Spinner /> 
+                ) : selectedData === "activity" ? (
+                    <SelectedActivity 
+                    user={user}
+                    />
+                ) : selectedData === "medic" ? (
+                    <SelectedMedic 
+                    user={user}
+                    />
+                ): selectedData === "payment" ? (
+                    <SelectedPayment 
+                    user={user}
+                    />
+                ) : selectedData === "timeline" ? (
+                    <SelectedMedic 
+                    user={user}
+                    />
+                ) : selectedData === "tools" ? (
+                    <SelectedMedic 
+                    user={user}
+                    />
+                ) : null}
         </DataSection>
         </>
     )

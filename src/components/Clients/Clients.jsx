@@ -91,7 +91,7 @@ export const Clients = () => {
                         <StyledH1>{item.phone}</StyledH1>
                         <StyledH1>{item.membership}</StyledH1>
                         <StyledH1>{item.expire}</StyledH1>
-                        <StyledH1>{item.frequency}</StyledH1>
+                        <StyledH1>{item.frequency.length}</StyledH1>
                     </StyledClient>
                     ))}
             
