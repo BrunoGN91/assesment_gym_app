@@ -37,7 +37,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -46,7 +46,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -54,7 +54,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -62,7 +62,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -70,7 +70,15 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
+                status: false,
+                membership: "Gold",
+                expiration: "31/10/2022"
+            },{
+                id: 1,
+                cupon: "none",
+                date: "19/08/2022",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -78,23 +86,15 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
-                status: true,
+                details: "Visa ****-****-****-8754",
+                status: false,
                 membership: "Gold",
                 expiration: "31/10/2022"
             },{
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
-                status: true,
-                membership: "Gold",
-                expiration: "31/10/2022"
-            },{
-                id: 1,
-                cupon: "none",
-                date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -140,7 +140,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -149,7 +149,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -157,7 +157,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -165,7 +165,15 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
+                status: false,
+                membership: "Gold",
+                expiration: "31/10/2022"
+            },{
+                id: 1,
+                cupon: "none",
+                date: "19/08/2022",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -173,7 +181,15 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
+                status: false,
+                membership: "Gold",
+                expiration: "31/10/2022"
+            },{
+                id: 1,
+                cupon: "none",
+                date: "19/08/2022",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -181,23 +197,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
-                status: true,
-                membership: "Gold",
-                expiration: "31/10/2022"
-            },{
-                id: 1,
-                cupon: "none",
-                date: "19/08/2022",
-                details: "****-****-****-4852",
-                status: true,
-                membership: "Gold",
-                expiration: "31/10/2022"
-            },{
-                id: 1,
-                cupon: "none",
-                date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -244,7 +244,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -253,7 +253,15 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
+                status: false,
+                membership: "Gold",
+                expiration: "31/10/2022"
+            },{
+                id: 1,
+                cupon: "none",
+                date: "19/08/2022",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -261,7 +269,15 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
+                status: false,
+                membership: "Gold",
+                expiration: "31/10/2022"
+            },{
+                id: 1,
+                cupon: "none",
+                date: "19/08/2022",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -269,7 +285,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -277,7 +293,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -285,23 +301,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
-                status: true,
-                membership: "Gold",
-                expiration: "31/10/2022"
-            },{
-                id: 1,
-                cupon: "none",
-                date: "19/08/2022",
-                details: "****-****-****-4852",
-                status: true,
-                membership: "Gold",
-                expiration: "31/10/2022"
-            },{
-                id: 1,
-                cupon: "none",
-                date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -347,7 +347,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -356,7 +356,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -364,7 +364,15 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
+                status: false,
+                membership: "Gold",
+                expiration: "31/10/2022"
+            },{
+                id: 1,
+                cupon: "none",
+                date: "19/08/2022",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -372,7 +380,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -380,7 +388,15 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
+                status: false,
+                membership: "Gold",
+                expiration: "31/10/2022"
+            },{
+                id: 1,
+                cupon: "none",
+                date: "19/08/2022",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -388,23 +404,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
-                status: true,
-                membership: "Gold",
-                expiration: "31/10/2022"
-            },{
-                id: 1,
-                cupon: "none",
-                date: "19/08/2022",
-                details: "****-****-****-4852",
-                status: true,
-                membership: "Gold",
-                expiration: "31/10/2022"
-            },{
-                id: 1,
-                cupon: "none",
-                date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -451,7 +451,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -460,7 +460,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -468,7 +468,15 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
+                status: false,
+                membership: "Gold",
+                expiration: "31/10/2022"
+            },{
+                id: 1,
+                cupon: "none",
+                date: "19/08/2022",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -476,7 +484,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -484,7 +492,7 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"
@@ -492,23 +500,15 @@ export const DATA_CLIENTS = [
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
-                status: true,
+                details: "Visa ****-****-****-8754",
+                status: false,
                 membership: "Gold",
                 expiration: "31/10/2022"
             },{
                 id: 1,
                 cupon: "none",
                 date: "19/08/2022",
-                details: "****-****-****-4852",
-                status: true,
-                membership: "Gold",
-                expiration: "31/10/2022"
-            },{
-                id: 1,
-                cupon: "none",
-                date: "19/08/2022",
-                details: "****-****-****-4852",
+                details: "Visa ****-****-****-8754",
                 status: true,
                 membership: "Gold",
                 expiration: "31/10/2022"

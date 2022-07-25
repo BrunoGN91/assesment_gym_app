@@ -13,8 +13,10 @@ export const SelectedMedic = ({user}) => {
         <>
         <h2 className="m-10 uppercase text-lg font-thin">Apto Medico</h2>
         <div className="flex flex-row items-center justify-around rounded-lg mx-10 mb-10">
+            <div className="flex flex-row items-center justify-center">
             <Switch {...label} defaultChecked />
-            {user.medic.active ? ( <h1 className='uppercase text-lg font-bold text-green-500'>Activdo</h1>) : ( <h1 className='uppercase text-lg font-bold text-red-500'>Expirado</h1>)}
+            {user.medic.active ? ( <h1 className='uppercase ml-20 text-3xl font-bold text-green-500'>Activdo</h1>) : ( <h1 className='uppercase text-lg font-bold text-red-500'>Expirado</h1>)}
+            </div>
             <h2 className='uppercase text-md font-bold'>Expiration date: {user.medic.expiration}</h2>
         </div>
         <div className="flex flex-row items-center justify-around rounded-lg mx-10 bg-white">

@@ -74,3 +74,65 @@ export const DataSection = styled("div")(({theme}) => ({
     minHeight: '80vh',
     backgroundColor: alpha(theme.palette.common.black, 0.1)
 }))
+
+
+export const Modal = styled("div")(({ theme }) => ({
+    position: 'fixed',
+    display: "flex",
+    alignItems: "start",
+    justifyContent: "center",
+    zIndex: '1',
+    paddingTop: '100px', 
+    left: '0',
+    top: '0',
+    width: '100%',
+    height: '100%',
+    overflow: 'auto',
+    transition: "1.2s ease-in-out",
+    backgroundColor: alpha(theme.palette.common.black, 0.5),
+}))
+
+export const BackgroundModal = styled("div")(({ theme }) => ({
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "auto",
+    borderRadius: "12px",
+    backgroundColor: alpha(theme.palette.common.white, 1),
+}))
+
+export const Exit = styled("span")(({ theme }) => ({
+        position: "absolute",
+        cursor: "pointer",
+        top: '80px',
+        right: '100px',
+        color:' #f1f1f1',
+        fontSize: '40px',
+        fontWeight: 'bold',
+        transition: '0.3s',
+}))
+
+export const Edit = styled("div")(({ theme }) => ({
+    backgroundColor: alpha(theme.palette.common.white, 1),
+    width: "auto",
+    borderRadius: "50%",
+    padding: "10px",
+    marginRight: "10px",
+    cursor: "pointer",
+    '&:hover': {
+        backgroundColor: "#CBE765"
+    }
+}))
+
+export const Remove = styled("div")(({ theme }) => ({
+    backgroundColor: alpha(theme.palette.common.white, 1),
+    width: "auto",
+    borderRadius: "50%",
+    padding: "10px",
+    marginRight: "10px",
+    cursor: "pointer",
+    marginTop: "12px",
+    '&:hover': {
+        backgroundColor: "#f15d4a"
+    }
+}))

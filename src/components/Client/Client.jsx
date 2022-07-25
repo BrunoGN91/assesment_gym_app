@@ -2,17 +2,23 @@ import {useEffect, useState} from "react"
 
 import { DATA_CLIENTS } from "../Data/data";
 
-
 import { Header } from './../Header/Header'
 import { useParams, useNavigate } from 'react-router-dom'
 import { SelectedActivity } from "./SelectedInfo/SelectedActivity";
 import { SelectedMedic } from './SelectedInfo/SelectedMedic'
 import { SelectedPayment } from "./SelectedInfo/SelectedPayment";
+import { SelectedTimeline } from "./SelectedInfo/SelectedTimeline";
+import { SelectedTools } from "./SelectedInfo/SelectedTools";
 
 import { Spinner } from "../Spinner/Spinner";
+import EditIcon from '@mui/icons-material/Edit';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import CheckIcon from '@mui/icons-material/Check';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import SettingsIcon from '@mui/icons-material/Settings';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import MailIcon from '@mui/icons-material/Mail';
+import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
 import {
     BackClients,
@@ -21,7 +27,11 @@ import {
     StyledH1,
     StyledH3,
     DataSection,
-    DataSelection
+    Modal,
+    Exit,
+    BackgroundModal,
+    Edit,
+    Remove
 } from './StyledClient'
 
 export const Client = () => {
@@ -29,13 +39,18 @@ export const Client = () => {
     const [selectedData, setSelectedData] = useState("")
     const [user, setUser] = useState({})
     const [loading, setLoading] = useState(false)
-
+    const [edit, setEdit] = useState(false)
+    const [image, setImage] = useState(false)
 
     const {id} = useParams()
     const navigate = useNavigate()
 
+    const handleBack = () => navigate('/clients', {replace: true})
+    const handleEdit = () => setEdit(!edit)
+
     useEffect(() => {
         setUser(DATA_CLIENTS[id])
+        setSelectedData("activity")
     },[])
 
     const handleSelectedInfo = (e) => {
@@ -44,12 +59,12 @@ export const Client = () => {
         setTimeout(() => {
             setLoading(false)
         }, 1400)
-       
     }
 
-    const handleBack = () => {
-        navigate('/clients', {replace: true})
-    }
+    const handleImage = () => setImage(true)
+    const handleImageExit = () => setImage(false)
+
+    
 
     return(
         <>
@@ -59,14 +74,60 @@ export const Client = () => {
             <h2>clients</h2>
         </BackClients>
         <div className='flex flex-col w-full lg:flex-row lg:items-start items-center justify-center sm:ml-10'>
-            <AccountCircleIcon sx={{ fontSize: 200 }}/>
+            <div className="flex flex-row items-end relative">
+                <AccountCircleIcon sx={{ fontSize: 250 }}/>
+                <ManageAccountsIcon
+                onClick={() => handleImage()}
+                sx={{ fontSize: 40, cursor: "pointer", position: "absolute", bottom: "15px", right: "15px" }}/>
+            </div>
+            {image ? (
+                <>
+                <div className="transition-colors ease-in-out">
+                    <Modal>
+                        <div className="flex flex-col my-2">
+                            <Edit>
+                                <EditIcon sx={{ fontSize: 40 }} />
+                            </Edit>
+                            <Remove>
+                                <DeleteForeverIcon sx={{ fontSize: 40 }}/>
+                            </Remove>
+                        </div>
+                    <BackgroundModal>
+                        <AccountCircleIcon sx={{ fontSize: 500 }}/>
+                        <Exit
+                        onClick={() => handleImageExit()}
+                        >x</Exit>
+                        
+                    </BackgroundModal>
+                    </Modal>
+                </div>
+                </>
+            ) : null}
             <ClientDataSection>
                     <div className="flex flex-row w-auto justify-between my-5 lg:w-full">
                         <div className="flex flex-col w-full justify-start items-baseline">
                             <StyledH2>Name</StyledH2>
                             <StyledH1>Norman Osborn</StyledH1>
                         </div>
-                        <SettingsIcon sx={{fontSize: "30px", marginRight: "20px"}}/>
+                        <div className="flex flex-row items-center justify-center">
+                        <MailIcon sx={{fontSize: "30px", margin: "0 20px", cursor: "pointer"}}/>
+                        <WhatsAppIcon sx={{fontSize: "30px", margin: "0 20px", cursor: "pointer"}}/>
+                        {!edit ? (
+                                <button
+                                className="m-2 rounded-lg border-neutral-400 hover:bg-slate-400"
+                                onClick={() => handleEdit()}>
+                                    <EditIcon
+                                    sx={{fontSize: "30px", margin: "0 20px"}}/>
+                                </button>
+                            ) : (
+                                <button
+                                className="m-2 rounded-2xl border-neutral-400 hover:bg-green-400"
+                                onClick={() => handleEdit()}>
+                                    <CheckIcon
+                                    sx={{fontSize: "30px", margin: "0 20px"}}/>
+                                </button>
+                                )}
+                                </div>
                         </div>
                         <div className="flex flex-col justify-between sm:flex-row w-auto lg:w-full">
                         <div className="flex flex-col w-full justify-start items-start mr-5 sm:items-baseline">
@@ -142,11 +203,11 @@ export const Client = () => {
                     user={user}
                     />
                 ) : selectedData === "timeline" ? (
-                    <SelectedMedic 
+                    <SelectedTimeline 
                     user={user}
                     />
                 ) : selectedData === "tools" ? (
-                    <SelectedMedic 
+                    <SelectedTools 
                     user={user}
                     />
                 ) : null}
