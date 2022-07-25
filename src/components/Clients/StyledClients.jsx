@@ -17,6 +17,7 @@ export const Search = styled('div')(({ theme }) => ({
     borderRadius: '20px',
     border: '1px solid black',
     backgroundColor: alpha(theme.palette.common.white, 0.35),
+    boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
     '&:hover': {
       backgroundColor: alpha(theme.palette.common.white, 0.5),
     },
@@ -63,6 +64,7 @@ export const Search = styled('div')(({ theme }) => ({
     borderRadius: '20px',
     minHeight: "41px",
     border: '1px solid black',
+    boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
     backgroundColor: alpha(theme.palette.common.white, 0.35),
     '&:hover': {
       backgroundColor: alpha(theme.palette.common.white, 0.5),
@@ -75,15 +77,15 @@ export const Search = styled('div')(({ theme }) => ({
     maxWidth: "200px",
     '&:hover': {
       cursor: 'pointer',
-      backgroundColor: alpha(theme.palette.success.light, 0.3)
+      backgroundColor: alpha(theme.palette.success.light, .18)
   }
   }))
 
   export const StyledH2 = styled('h2')(({ theme }) => ({
     textTransform: 'uppercase',
-    fontSize: '0.8rem',
+    fontSize: '1rem',
     fontFamily: "Roboto",
-    fontWeight: "regular",
+    fontWeight: "100",
     letterSpacing: "0.1ch",
     margin: "0 10px",
     transition: theme.transitions.create('color'),

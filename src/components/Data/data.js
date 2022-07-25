@@ -6,22 +6,24 @@ export const DATA_CLIENTS = [
         phone: "345-847-5589",
         membership: "Gold",
         expire: "31/09/2022",
+        bornDate: "11/12/1975",
+        dni: "14.185.244",
         frequency: [
             { 
                 id: 1,
-                date: "18/08/2022",
+                date: 1651780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             },
             { 
                 id: 2,
-                date: "12/08/2022",
+                date: 1651780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             },
             { 
                 id: 3,
-                date: "08/08/2022",
+                date: 1648780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             }
@@ -109,22 +111,24 @@ export const DATA_CLIENTS = [
         phone: "345-847-5589",
         membership: "Gold",
         expire: "31/09/2022",
+        bornDate: "11/12/1975",
+        dni: "14.185.244",
         frequency: [
             { 
                 id: 1,
-                date: "18/08/2022",
+                date: 1651780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             },
             { 
                 id: 2,
-                date: "12/08/2022",
+                date: 1651780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             },
             { 
                 id: 3,
-                date: "08/08/2022",
+                date: 1648780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             }
@@ -213,22 +217,24 @@ export const DATA_CLIENTS = [
         phone: "345-847-5589",
         membership: "Gold",
         expire: "31/09/2022",
+        bornDate: "11/12/1975",
+        dni: "14.185.244",
         frequency: [
             { 
                 id: 1,
-                date: "18/08/2022",
+                date: 1651780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             },
             { 
                 id: 2,
-                date: "12/08/2022",
+                date: 1651780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             },
             { 
                 id: 3,
-                date: "08/08/2022",
+                date: 1648780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             }
@@ -316,22 +322,24 @@ export const DATA_CLIENTS = [
         phone: "345-847-5589",
         membership: "Gold",
         expire: "31/09/2022",
+        bornDate: "11/12/1975",
+        dni: "14.185.244",
         frequency: [
             { 
                 id: 1,
-                date: "18/08/2022",
+                date: 1651780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             },
             { 
                 id: 2,
-                date: "12/08/2022",
+                date: 1651780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             },
             { 
                 id: 3,
-                date: "08/08/2022",
+                date: 1648780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             }
@@ -420,22 +428,24 @@ export const DATA_CLIENTS = [
         phone: "345-847-5589",
         membership: "Gold",
         expire: "31/09/2022",
+        bornDate: "11/12/1975",
+        dni: "14.185.244",
         frequency: [
             { 
                 id: 1,
-                date: "18/08/2022",
+                date: 1651780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             },
             { 
                 id: 2,
-                date: "12/08/2022",
+                date: 1651780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             },
             { 
                 id: 3,
-                date: "08/08/2022",
+                date: 1648780332262,
                 location: "Microcentro",
                 excercises: "Musculación"
             }

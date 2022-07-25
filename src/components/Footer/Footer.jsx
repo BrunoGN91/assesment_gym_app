@@ -34,7 +34,7 @@ export const Footer = () => {
                 <h2>Instagram</h2>
                 <h2>Email</h2>
             </div>
-            <div className="flex flex-col w-80 h-full items-end justify-center mt-10 uppercase font-thin text-sm text-white">
+            <div className="flex flex-col w-80 h-full items-end justify-center uppercase font-thin text-sm text-white">
                 <h2>© Copyright all rights reserved</h2>
                 <h2>2022-2022</h2>
             </div>

@@ -12,15 +12,18 @@ export const SelectedPayment = ({ user }) => {
 
     return (
         <>
-        <div className="flex flex-row items-center justify-start">
+        <div className="flex flex-row items-center justify-between">
+            <div className='flex flex-row items-center justify-center'>
             <h2
             className={`cursor-pointer ${data ? "mx-10 uppercase text-2xl font-thin" : "mx-10 uppercase text-md font-bold text-cyan-600"}`}
             onClick={() => handlePayments()}
             >Pagos</h2>
             <h2
             onClick={() => handleMemberships()}
-            className={`cursor-pointer ${data ? "m-10 uppercase text-md font-bold text-cyan-600" : "m-10 uppercase text-2xl font-bold"}`}>Asociaciones</h2>
-            <NewPayment>
+            className={`cursor-pointer ${data ? "m-10 uppercase text-md font-bold text-cyan-600" : "m-10 uppercase text-2xl font-thin"}`}
+            >Asociaciones</h2>
+            </div>
+            <NewPayment sx={{marginRight: 10}}>
                 <StyledH2>Realizar pago</StyledH2>
                 <PaymentIcon />
             </NewPayment>
@@ -54,20 +57,20 @@ export const SelectedPayment = ({ user }) => {
         ) : (
             <>
             <div className='grid grid-flow-col auto-cols-max gap-x-5 uppercase text-sm mx-10 pb-5'>
-                <h2 className=' text-orange-400 w-40'>Name</h2>
-                <h2 className='w-80'>Fecha de pago</h2>
-                <h2 className='w-80'>Status</h2>
-                <h2 className='w-40'>Membresia</h2>
-                <h2 className='w-40'>vencimiento</h2>
+            <h2 className=' text-orange-400 lg:w-80 xlg:w-[40vh] 2xl:w-[40vh] 3xl:w-[60vh]'>Name</h2>
+            <h2 className='lg:w-40 xlg:w-[40vh] 2xl:w-[28vh]'>Fecha</h2>
+            <h2 className='lg:w-40  xlg:w-[15vh] 2xl:w-[28vh]'>Status</h2>
+            <h2 className='lg:w-40  xlg:w-[15vh] 2xl:w-[28vh]'>Membresia</h2>
+            <h2 className='lg:w-40  xlg:w-[15vh] 2xl:w-[28vh]'>vencimiento</h2>
             </div>
             {user.payments.map(payment => (
             <>
             <div className='grid grid-flow-col auto-cols-max gap-x-5 uppercase text-sm my-5 mx-10 border-b-2 pb-5 border-zinc-300'>
-                <h2 className='font-normal text-base w-40'>{user.fullName}</h2>
-                <h2 className='font-thin text-base w-80'>{payment.date}</h2>
-                <h2 className={`font-bold text-sm w-80 ${payment.status ? "text-green-400" : "text-red-300"}`}>{payment.status ? "Aprobado" : "Rechazado"}</h2>
-                <h2 className='font-thin text-base w-40'>{payment.membership}</h2>
-                <h2 className='font-thin text-base w-40'>{payment.expiration}</h2>
+            <h2 className='font-normal text-base lg:w-80 xlg:w-[40vh] 2xl:w-[40vh] 3xl:w-[60vh]'>{user.fullName}</h2>
+                <h2 className='font-thin text-base lg:w-40  xlg:w-[40vh] 2xl:w-[28vh]'>{payment.date}</h2>
+                <h2 className={`font-bold text-sm lg:w-40 xlg:w-[15vh] 2xl:w-[28vh] ${payment.status ? "text-green-400" : "text-red-300"}`}>{payment.status ? "Aprobado" : "Rechazado"}</h2>
+                <h2 className='font-thin text-base lg:w-40 xlg:w-[15vh] 2xl:w-[28vh] '>{payment.membership}</h2>
+                <h2 className='font-thin text-base lg:w-40 xlg:w-[15vh] 2xl:w-[28vh] '>{payment.expiration}</h2>
             </div>
             </>
         ))}

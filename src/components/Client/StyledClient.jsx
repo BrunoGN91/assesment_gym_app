@@ -8,10 +8,11 @@ export const BackClients = styled("div")(({theme}) => ({
     position: "relative",
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: "5px",
-    width: "130px",
+    borderRadius: "50%",
+    width: "50px",
+    height: "50px",
     padding: "5px",
-    margin: "20px 40px",
+    margin: "20px 0 0 40px",
     textTransform: "uppercase",
     display: "flex",
     color: "#4574FF",
@@ -71,7 +72,9 @@ export const DataSection = styled("div")(({theme}) => ({
     maxWidth: '100%',
     margin: "40px 30px",
     minHeight: '80vh',
-    backgroundColor: alpha(theme.palette.common.black, 0.1)
+    borderRadius: "0.5rem",
+    boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
+    backgroundColor: alpha(theme.palette.common.black, 0.02)
 }))
 
 

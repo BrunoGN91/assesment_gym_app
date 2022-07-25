@@ -51,8 +51,6 @@ export const Clients = () => {
               <SearchIcon sx={{ color: 'black'}}/>
             </SearchIconWrapper>
             <StyledInputBase
-            
-              placeholder="Search clients.."
               inputProps={{ 'Roboto': 'search' }}
             />
           </Search>
@@ -64,7 +62,7 @@ export const Clients = () => {
           <StyledClientsBody>
                     <StyledClientsActions>
                         <div className="flex flex-row m-5 items-center">
-                            <h2 className="uppercase font-bold text-orange-600 text-3xl">27</h2>
+                            <h2 className="uppercase font-bold text-orange-600 text-3xl mr-5">{list.length}</h2>
                             <h2 className="uppercase font-bold text-orange-600 text-sm">Clientes</h2>
                         </div>
                         <div className="flex flex-row mx-5">
