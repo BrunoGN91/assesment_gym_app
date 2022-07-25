@@ -28,25 +28,25 @@ export const SelectedPayment = ({ user }) => {
         {data ? (
             <>
         
-        <div className='grid grid-flow-col auto-cols-max gap-x-5 uppercase text-sm mx-10 pb-5'>
-            <h2 className=' text-orange-400 w-40 lg:w-80'>Name</h2>
-            <h2 className='w-40 lg:w-80'>Cupon</h2>
-            <h2 className='w-40 lg:w-80'>Fecha</h2>
-            <h2 className='w-60 lg:w-100'>Detalles</h2>
-            <h2 className='w-20 lg:w-[7.5rem]'>Status</h2>
-            <h2 className='w-20 lg:w-[7.5rem]'>Membresia</h2>
-            <h2 className='w-20 lg:w-[7.5rem]'>vencimiento</h2>
+        <div className='grid grid-flow-col auto-cols-max xl:gap-x-10 lg:gap-x-5 uppercase text-sm mx-10 pb-5'>
+            <h2 className=' text-orange-400 lg:w-40 2xl:w-[40vh] 3xl:w-[50vh]'>Name</h2>
+            <h2 className='lg:w-40 2xl:w-[20vh] 3xl:w-[30vh]'>Cupon</h2>
+            <h2 className='lg:w-40 2xl:w-[10vh]'>Fecha</h2>
+            <h2 className='lg:w-60 2xl:w-[25vh] 3xl:w-[35vh]'>Detalles</h2>
+            <h2 className='lg:w-20 2xl:w-[10vh]'>Status</h2>
+            <h2 className='lg:w-20 2xl:w-[10vh]'>Membresia</h2>
+            <h2 className='lg:w-20 2xl:w-[10vh]'>vencimiento</h2>
         </div>
         {user.payments.map(payment => (
             <>
-            <div className='grid grid-flow-col auto-cols-max gap-x-5 uppercase text-sm my-5 mx-10 border-b-2 pb-5 border-zinc-300'>
-                <h2 className='font-normal text-base w-40 lg:w-80'>{user.fullName}</h2>
-                <h2 className='font-thin text-base w-40 lg:w-80'>{payment.cupon}</h2>
-                <h2 className='font-thin text-base w-40 lg:w-80'>{payment.date}</h2>
-                <h2 className='font-thin text-base w-60 lg:w-100'>{payment.details}</h2>
-                <h2 className={`font-bold text-sm w-20 lg:w-[7.5rem] ${payment.status ? "text-green-400" : "text-red-300"}`}>{payment.status ? "Aprobado" : "Rechazado"}</h2>
-                <h2 className='font-thin text-base w-20 lg:w-[7.5rem]'>{payment.membership}</h2>
-                <h2 className='font-thin text-base w-20 lg:w-[7.5rem]'>{payment.expiration}</h2>
+            <div className='grid grid-flow-col auto-cols-max xl:gap-x-10 lg:gap-x-5 uppercase text-sm my-5 mx-10 border-b-2 pb-5 border-zinc-300'>
+                <h2 className='font-normal text-base lg:w-40 2xl:w-[40vh] 3xl:w-[50vh]'>{user.fullName}</h2>
+                <h2 className='font-thin text-base lg:w-40 2xl:w-[20vh] 3xl:w-[30vh]'>{payment.cupon}</h2>
+                <h2 className='font-thin text-base lg:w-40 2xl:w-[10vh]'>{payment.date}</h2>
+                <h2 className='font-thin text-base lg:w-60 2xl:w-[25vh] 3xl:w-[35vh]'>{payment.details}</h2>
+                <h2 className={`font-bold text-sm lg:w-20 2xl:w-[10vh] ${payment.status ? "text-green-400" : "text-red-300"}`}>{payment.status ? "Aprobado" : "Rechazado"}</h2>
+                <h2 className='font-thin text-base lg:w-20 2xl:w-[10vh] '>{payment.membership}</h2>
+                <h2 className='font-thin text-base lg:w-20 2xl:w-[10vh] '>{payment.expiration}</h2>
             </div>
             </>
         ))}

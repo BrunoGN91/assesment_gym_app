@@ -1,5 +1,6 @@
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
+import {useNavigate} from 'react-router-dom'
 
 // Icons
 import Logo from '../../logos/weight.png'
@@ -30,6 +31,10 @@ import {
 
 export const Header = () => {
 
+    const navigate = useNavigate()
+
+    const handleNavigateClients = () => navigate('/clients', {replace: true})
+    
 
     return (
         <>
@@ -40,7 +45,7 @@ export const Header = () => {
         <StyledToolbar>
         <StyledLeftSide>
             <img 
-            className='w-10 mr-5'
+            className='w-20 mr-5'
             src={Logo} 
             name="logo_gym"/>
             <StyledItems>
@@ -86,12 +91,30 @@ export const Header = () => {
             <StyledMediaMenu>
                     <ListIcon fontSize="large"/>
             </StyledMediaMenu>
-            <StyledOptionBar>Dashboard</StyledOptionBar>
-            <StyledOptionBar>Calendar</StyledOptionBar>
-            <StyledOptionBar>Store</StyledOptionBar>
-            <StyledOptionBar>Classes</StyledOptionBar>
-            <StyledOptionBar>Payments</StyledOptionBar>
-            <StyledOptionBar>Studio</StyledOptionBar>
+            <StyledOptionBar
+                onClick={() => navigate('/dashboard', {replace: true})}
+                >Dashboard
+            </StyledOptionBar>
+            <StyledOptionBar 
+                onClick={() => navigate('/calendar', {replace: true})}
+                >Calendar
+            </StyledOptionBar>
+            <StyledOptionBar 
+                onClick={() => navigate('/clients', {replace: true})}>
+                    Clients
+            </StyledOptionBar>
+            <StyledOptionBar
+                onClick={() => navigate('/classes', {replace: true})}
+                >Classes
+            </StyledOptionBar>
+            <StyledOptionBar
+                onClick={() => navigate('/payments', {replace: true})}
+                >Payments
+            </StyledOptionBar>
+            <StyledOptionBar
+                onClick={() => navigate('/studio', {replace: true})}
+                >Studio
+            </StyledOptionBar>
         </StyledOptionSection>
       </AppBar>
     </Box>

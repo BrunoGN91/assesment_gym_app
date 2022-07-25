@@ -11,7 +11,7 @@ export const SelectedMedic = ({user}) => {
 
     return (
         <>
-        <h2 className="m-10 uppercase text-lg font-thin">Apto Medico</h2>
+        <h2 className="m-10 uppercase text-lg font-thin">Apto Médico</h2>
         <div className="flex flex-row items-center justify-around rounded-lg mx-10 mb-10">
             <div className="flex flex-row items-center justify-center">
             <Switch {...label} defaultChecked />
@@ -30,7 +30,7 @@ export const SelectedMedic = ({user}) => {
             </div>
         </div>
         <h2 className="m-10 uppercase text-lg font-thin">observaciones</h2>
-        <div className="flex flex-row items-start justify-start rounded-lg mx-10 pt-5 bg-white h-96">
+        <div className="flex flex-row items-start justify-start rounded-lg mb-10 mx-10 pt-5 bg-white h-96">
             <h2 className='uppercase text-md font-thin item-start mx-10'>{user.medic.description}</h2>
         </div>
         </>

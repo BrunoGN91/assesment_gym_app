@@ -16,6 +16,8 @@ import { Search,
     StyledClient,
     StyledClientsActions }from './StyledClients'
 
+import { Footer } from "../Footer/Footer";
+
 // Icons
 import SearchIcon from '@mui/icons-material/Search';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
@@ -97,6 +99,7 @@ export const Clients = () => {
             
           </StyledClientsBody>
           </Box>
+          <Footer/>
         </>
     )
 }

@@ -3,6 +3,8 @@ import {useEffect, useState} from "react"
 import { DATA_CLIENTS } from "../Data/data";
 
 import { Header } from './../Header/Header'
+import { Footer } from "../Footer/Footer";
+
 import { useParams, useNavigate } from 'react-router-dom'
 import { SelectedActivity } from "./SelectedInfo/SelectedActivity";
 import { SelectedMedic } from './SelectedInfo/SelectedMedic'
@@ -73,7 +75,7 @@ export const Client = () => {
             <ArrowBackIcon />
             <h2>clients</h2>
         </BackClients>
-        <div className='flex flex-col w-full lg:flex-row lg:items-start items-center justify-center sm:ml-10'>
+        <div className='flex flex-col lg:flex-row lg:items-start items-center justify-center sm:ml-10'>
             <div className="flex flex-row items-end relative">
                 <AccountCircleIcon sx={{ fontSize: 250 }}/>
                 <ManageAccountsIcon
@@ -212,6 +214,7 @@ export const Client = () => {
                     />
                 ) : null}
         </DataSection>
+        <Footer />
         </>
     )
 }
