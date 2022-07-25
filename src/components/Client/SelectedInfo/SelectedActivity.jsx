@@ -8,7 +8,7 @@ export const SelectedActivity = ({user}) => {
 
     return (
         <>
-            <h2 className="m-10 uppercase text-lg font-thin">Actividad</h2>
+            <h2 className="m-10 uppercase text-2xl font-thin">Actividad</h2>
             <div className="flex flex-row items-center justify-around mb-20">
             <div className="flex flex-row items-center justify-around">
                 <img className="w-full"src={Asset} alt="" />

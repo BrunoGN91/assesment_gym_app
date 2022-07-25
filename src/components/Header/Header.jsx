@@ -52,19 +52,25 @@ export const Header = () => {
                 <img 
                 className='w-6 mx-5'
                 src={Home} alt="" />
-                <StyledH2>Home</StyledH2>
+                <StyledH2
+                onClick={() => navigate('/')}
+                >Home</StyledH2>
             </StyledItems>
             <StyledItems>
             <img 
             className='w-6 mx-5'
             src={Reports} alt="" />
-                <StyledH2>Reports</StyledH2>
+                <StyledH2
+                onClick={() => navigate('/reports')}
+                >Reports</StyledH2>
             </StyledItems>
             <StyledItems>
             <img 
             className='w-6 mx-5'
             src={Manage} alt="" />
-                <StyledH2>Manage</StyledH2>
+                <StyledH2
+                onClick={() => navigate('/manage')}
+                >Manage</StyledH2>
             </StyledItems>
         </StyledLeftSide>
         <StyledRightSide>

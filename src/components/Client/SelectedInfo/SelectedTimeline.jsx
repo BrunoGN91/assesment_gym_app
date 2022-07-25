@@ -7,7 +7,7 @@ export const SelectedTimeline = ({ user }) => {
 
     return (
         <>
-        <h2 className="m-10 uppercase text-lg font-normal">LiNeA De TiEmPo</h2>
+        <h2 className="m-10 uppercase text-2xl font-thin">LiNeA De TiEmPo</h2>
         <div className='flex flex-col items-start justify-center w-full'>
             <div className='flex flex-row items-center justify-between ml-20 mb-10 w-11/12'>
                 <SettingsIcon sx={{ fontSize: 50, marginRight: "40px"}}/>

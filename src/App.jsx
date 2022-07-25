@@ -1,4 +1,4 @@
-import { Header } from './components/Header/Header'
+import { Home } from './components/Home/Home';
 import { Clients } from './components/Clients/Clients'
 import { Client } from './components/Client/Client';
 import { Error404 } from './components/Errors/Error404';
@@ -30,7 +30,7 @@ const location = useLocation()
       animate="in" 
       exit="out" 
       variants={pageTransistion}>
-          <Header />
+          <Home />
           </motion.div>
         }>
       </Route>

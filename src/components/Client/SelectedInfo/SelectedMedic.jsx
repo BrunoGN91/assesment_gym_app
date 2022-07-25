@@ -11,7 +11,7 @@ export const SelectedMedic = ({user}) => {
 
     return (
         <>
-        <h2 className="m-10 uppercase text-lg font-thin">Apto Médico</h2>
+        <h2 className="m-10 uppercase text-2xl font-thin">Apto Médico</h2>
         <div className="flex flex-row items-center justify-around rounded-lg mx-10 mb-10">
             <div className="flex flex-row items-center justify-center">
             <Switch {...label} defaultChecked />

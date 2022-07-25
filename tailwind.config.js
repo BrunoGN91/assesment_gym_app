@@ -20,8 +20,7 @@ module.exports = {
       '3xl': '1740px'
     },
       fontFamily: {
-        sans: 
-          'Roboto',
+        'sans': ['Roboto', 'sans-serif']
       },
   },
   

@@ -14,7 +14,7 @@ export const SelectedPayment = ({ user }) => {
         <>
         <div className="flex flex-row items-center justify-start">
             <h2
-            className={`cursor-pointer ${data ? "mx-10 uppercase text-2xl font-bold" : "mx-10 uppercase text-md font-bold text-cyan-600"}`}
+            className={`cursor-pointer ${data ? "mx-10 uppercase text-2xl font-thin" : "mx-10 uppercase text-md font-bold text-cyan-600"}`}
             onClick={() => handlePayments()}
             >Pagos</h2>
             <h2

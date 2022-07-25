@@ -41,10 +41,9 @@ export const StyledH1 = styled("h1")(({theme}) => ({
 }))
 
 export const StyledH3 = styled("h3")(({theme}) => ({
-    fontSize: "0.8rem",
+    fontSize: "1rem",
     textTransform: "uppercase",
     marginLeft: "5px",
-    fontWeight: "bold",
 
 }))
 

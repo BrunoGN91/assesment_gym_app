@@ -60,7 +60,7 @@ export const Client = () => {
         setSelectedData(e)
         setTimeout(() => {
             setLoading(false)
-        }, 1400)
+        }, 600)
     }
 
     const handleImage = () => setImage(true)
@@ -160,7 +160,7 @@ export const Client = () => {
             <button
             value={"activity"}
             onClick={(e) => handleSelectedInfo(e.currentTarget.value)}
-            className={`flex flex-row items-center transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "activity" ? 'bg-stone-400' : 'bg-stone-300'}`}>
+            className={`flex flex-row items-center font-thin transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "activity" ? 'bg-stone-400 text-white font-normal' : 'bg-stone-300'}`}>
                 <StyledH3
                 name="activity"
                 value="activity"
@@ -169,25 +169,25 @@ export const Client = () => {
             <button
             value={"medic"}
             onClick={(e) => handleSelectedInfo(e.currentTarget.value)}
-            className={`flex flex-row items-center transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "medic" ? 'bg-stone-400' : 'bg-stone-300'}`}>
+            className={`flex flex-row items-center font-thin transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "medic" ? 'bg-stone-400 text-white font-normal' : 'bg-stone-300'}`}>
                 <StyledH3>Apto medico</StyledH3>
             </button>
             <button 
             value={"payment"}
             onClick={(e) => handleSelectedInfo(e.currentTarget.value)}
-            className={`flex flex-row items-center transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "payment" ? 'bg-stone-400' : 'bg-stone-300'}`}>
+            className={`flex flex-row items-center font-thin transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "payment" ? 'bg-stone-400 text-white font-normal' : 'bg-stone-300'}`}>
                 <StyledH3>Pagos</StyledH3>
             </button>
             <button 
             value={"timeline"}
             onClick={(e) => handleSelectedInfo(e.currentTarget.value)}
-            className={`flex flex-row items-center transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "timeline" ? 'bg-stone-400' : 'bg-stone-300'}`}>
+            className={`flex flex-row items-center font-thin transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "timeline" ? 'bg-stone-400 text-white font-normal' : 'bg-stone-300'}`}>
                 <StyledH3>Linea temporal</StyledH3>
             </button>
             <button
             value={"tools"}
             onClick={(e) => handleSelectedInfo(e.currentTarget.value)} 
-            className={`flex flex-row items-center transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "tools" ? 'bg-stone-400' : 'bg-stone-300'}`}>
+            className={`flex flex-row items-center font-thin transition-colors ease-in-out justify-center w-full h-10 ${selectedData === "tools" ? 'bg-stone-400 text-white font-normal' : 'bg-stone-300'}`}>
                 <StyledH3>Herramientas</StyledH3>
             </button>
             </div>
