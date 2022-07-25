@@ -1,9 +1,11 @@
-# Muvinai Assesmennt Front End Challenge
+# Assesment Front End Challenge
 
 ## Gym App for client visualization and editing
 
 Designed in Adobe Illustrator.
 Built in React, with Tailwind and Material UI.
+
+[Link to deployed site](https://assesmentgymapp.netlify.app/)
 
 Steps to get started:
 
