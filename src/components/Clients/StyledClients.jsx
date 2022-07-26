@@ -9,15 +9,16 @@ export const StyledClientsTopBar = styled('div')(({ theme}) => ({
     justifyContent: "space-around",
     alignItems: "center",
     padding: "30px",
-    backgroundColor: alpha(theme.palette.common.black, 0.1)
+    boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
+    backgroundColor: alpha(theme.palette.common.white, 0.1)
 }))
 
 export const Search = styled('div')(({ theme }) => ({
     position: 'relative',
     borderRadius: '20px',
-    border: '1px solid black',
+    border: '1px solid rgba(0,0,0,0.14)',
     backgroundColor: alpha(theme.palette.common.white, 0.35),
-    boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
+    boxShadow: "0px 2px 4px -1px rgba(126, 126, 126, 0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
     '&:hover': {
       backgroundColor: alpha(theme.palette.common.white, 0.5),
     },
@@ -63,7 +64,7 @@ export const Search = styled('div')(({ theme }) => ({
     justifyContent: "center",
     borderRadius: '20px',
     minHeight: "41px",
-    border: '1px solid black',
+    border: '1px solid rgba(0,0,0,0.14)',
     boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
     backgroundColor: alpha(theme.palette.common.white, 0.35),
     '&:hover': {
@@ -97,8 +98,9 @@ export const StyledClientsBody = styled("div")(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   minHeight: "80vh",
-  margin: "50px 20px 0 20px",
-    backgroundColor: alpha(theme.palette.common.black, 0.1)
+  margin: "50px 20px 20px 20px",
+  boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
+  backgroundColor: alpha(theme.palette.common.white, 0.1)
 }))
 
 export const StyledClientsActions = styled("div")(({ theme }) => ({
