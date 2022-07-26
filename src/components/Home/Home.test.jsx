@@ -24,6 +24,9 @@ describe("testing component", () => {
             name: /manage/i
           })
 
-          expect(headerManage, headerHome, headerManage).toBeInTheDocument()
+          expect(headerHome).toBeInTheDocument()
+          expect(headerReports).toBeInTheDocument()
+          expect(headerManage).toBeInTheDocument()
+
     })
 })

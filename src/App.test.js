@@ -1,7 +1,17 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import{ App }from './App';
+import { MemoryRouter } from 'react-router-dom';
 
-test('renders learn react link', () => {
-  render(<App />);
+
+describe('renders learn react link', () => {
+
+  beforeEach(() => {
+    render(<App />, {wrapper: MemoryRouter});
+  })
+ 
+it("Testing App", () => {
+
+  expect.toHaveClass('App');
+})
 
 });
